@@ -3,10 +3,10 @@ import { HttpClient, HttpRequest, HttpEvent } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FileUploadService {
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = 'http://10.205.16.16:8081';
 
   constructor(private http: HttpClient) {}
 
