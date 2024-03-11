@@ -20,6 +20,11 @@ export class FileUploadService {
       responseType: 'json',
     });
 
+    req.headers.append(
+      'X-Auth-Secret-Key',
+      'cmVwcGlkb19pbWFnZV91cGxvYWRfcHJvamVjdA=='
+    );
+
     return this.http.request(req);
   }
 
